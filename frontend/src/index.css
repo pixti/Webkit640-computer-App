@@ -1,0 +1,39 @@
+/* Custom CSS for finer adjustments */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8f9fa;
+}
+
+html[data-bs-theme='dark'] body {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+/* [추가] 카드 헤더 링크에 호버 효과 */
+.card-header-link {
+    text-decoration: none;
+    color: inherit; /* 부모 요소의 글자색을 상속 */
+}
+
+.card-header-link:hover .card-header,
+.list-group-item-action:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+[data-bs-theme='dark'] .card-header-link:hover .card-header,
+[data-bs-theme='dark'] .list-group-item-action:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* [추가] 텍스트 한 줄로 줄이고 ... 표시 */
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}

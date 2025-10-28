@@ -1,0 +1,10 @@
+# Node.js 의존성 폴더
+node_modules/
+
+# 환경 변수 파일
+.env
+
+# IDE 및 운영체제 관련 파일
+.idea/
+.vscode/
+.DS_Store
